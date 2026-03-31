@@ -58,7 +58,7 @@ const SearchResults = () => {
     });
 
     return (
-        <div className="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed min-h-screen">
+        <div className="bg-surface text-on-surface font-body min-h-screen">
             <Navbar />
 
             <main className="pt-28 pb-20 px-6 max-w-7xl mx-auto">

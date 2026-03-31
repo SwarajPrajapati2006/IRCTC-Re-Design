@@ -11,7 +11,7 @@ const PNRStatus = () => {
     const pnrText = t('pnrstatus');
 
     return (
-        <div className="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed min-h-screen flex flex-col">
+        <div className="bg-surface text-on-surface font-body min-h-screen flex flex-col">
             <Navbar />
 
             <main className="flex-1 pt-32 pb-20 px-6 max-w-7xl mx-auto w-full">

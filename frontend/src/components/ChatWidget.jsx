@@ -189,13 +189,28 @@ const ChatWidget = () => {
 
             {/* Toggle Button */}
             {!isOpen && (
-                <button 
-                    onClick={() => setIsOpen(true)}
-                    className="pointer-events-auto group relative w-16 h-16 bg-primary text-on-primary rounded-2xl flex items-center justify-center shadow-[0_10px_25px_rgba(20,29,30,0.15)] hover:shadow-[0_15px_35px_rgba(163,62,0,0.3)] transition-all duration-300 hover:scale-105 active:scale-95"
-                >
-                    <span className="material-symbols-outlined text-3xl group-hover:rotate-12 transition-transform duration-300" style={{fontVariationSettings: "'FILL' 1"}}>smart_toy</span>
-                    <span className="absolute -top-2 -right-2 w-5 h-5 bg-error text-white text-[10px] font-black rounded-full flex justify-center items-center shadow-sm animate-bounce ring-4 ring-surface">1</span>
-                </button>
+                <div className="pointer-events-auto flex flex-col items-center gap-4 group cursor-pointer" onClick={() => setIsOpen(true)}>
+                    <div className="relative">
+                        {/* Minus / Close badge top left */}
+                        <div className="absolute -top-2 -left-2 z-10 w-6 h-6 bg-[#007aff] rounded-full flex items-center justify-center text-white font-bold shadow-md cursor-pointer hover:bg-blue-700 transition-colors">
+                            <span className="material-symbols-outlined text-sm font-bold">remove</span>
+                        </div>
+                        
+                        {/* AskDisha Avatar */}
+                        <div className="w-[100px] h-[100px] rounded-full bg-white shadow-[0_10px_25px_rgba(0,122,255,0.2)] flex items-center justify-center overflow-hidden border-4 border-[#007aff] group-hover:scale-105 transition-transform duration-300">
+                            {/* Fallback image if exact URL from IRCTC isn't available */}
+                            <img src="https://www.irctc.co.in/nget/assets/images/askDisha.png" alt="AskDisha 2.0" className="w-full h-full object-cover" onError={(e) => { e.target.style.display='none'; e.target.nextSibling.style.display='flex'; }} />
+                            <div className="hidden w-full h-full bg-[#007aff] text-white flex-col items-center justify-center">
+                                <span className="material-symbols-outlined text-4xl" style={{fontVariationSettings: "'FILL' 1"}}>support_agent</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Speech Pill */}
+                    <div className="bg-white px-5 py-3 rounded-full shadow-[0_5px_15px_rgba(0,0,0,0.1)] group-hover:-translate-y-1 transition-transform duration-300">
+                        <span className="text-[#141d1e] text-[13px] font-black tracking-wide">Easy Booking on AskDisha</span>
+                    </div>
+                </div>
             )}
         </div>
     );

@@ -30,7 +30,7 @@ const Homepage = () => {
     };
 
     return (
-        <div className="bg-surface font-body text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed min-h-screen">
+        <div className="bg-surface font-body text-on-surface min-h-screen">
             <Navbar />
 
             <main className="pt-24 pb-32">

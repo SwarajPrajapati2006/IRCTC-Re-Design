@@ -57,9 +57,9 @@ export default {
         "inverse-on-surface": "#e9f3f3"
       },
       fontFamily: {
-        "headline": ["Inter"],
-        "body": ["Inter"],
-        "label": ["Inter"]
+        "headline": ["Inter", "system-ui", "sans-serif"],
+        "body": ["Inter", "system-ui", "sans-serif"],
+        "label": ["Inter", "system-ui", "sans-serif"]
       },
       borderRadius: {
         "DEFAULT": "0.25rem",

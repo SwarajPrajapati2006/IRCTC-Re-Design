@@ -94,7 +94,7 @@ const Support = () => {
     };
 
     return (
-        <div className="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed min-h-screen flex flex-col">
+        <div className="bg-surface text-on-surface font-body min-h-screen flex flex-col">
             <Navbar />
 
             <main className="flex-1 pt-32 pb-20 px-6 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -198,7 +198,7 @@ const Support = () => {
                 ) : (
                     <div 
                         onClick={() => setIsChatOpen(true)}
-                        className="bg-surface-container-lowest rounded-[2rem] shadow-sm border border-outline-variant/10 flex flex-col justify-center items-center h-[600px] hover:shadow-md transition-all cursor-pointer group"
+                        className="bg-surface-container-lowest rounded-[2rem] shadow-sm border border-outline-variant/10 flex flex-col justify-center items-center h-auto py-16 hover:shadow-md transition-all cursor-pointer group"
                     >
                         <div className="w-24 h-24 bg-primary/10 text-primary rounded-full flex justify-center items-center mb-6 group-hover:scale-110 group-hover:bg-primary group-hover:text-on-primary transition-all duration-300">
                             <span className="material-symbols-outlined text-4xl" style={{fontVariationSettings: "'FILL' 1"}}>smart_toy</span>

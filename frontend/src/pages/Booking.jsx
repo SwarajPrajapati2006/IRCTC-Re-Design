@@ -17,7 +17,7 @@ const Booking = () => {
     const [passengers, setPassengers] = useState([{ name: '', age: '', gender: 'Male', berth: 'No Preference' }]);
 
     return (
-        <div className="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed min-h-screen pb-32">
+        <div className="bg-surface text-on-surface font-body min-h-screen pb-32">
             <Navbar />
 
             <main className="pt-24 pb-32 px-6 max-w-7xl mx-auto">
