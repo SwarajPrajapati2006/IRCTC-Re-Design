@@ -51,4 +51,4 @@ To run this project locally, follow these steps:
 
 ---
 
-*Designed and Developed by [Rituraj Jha](https://github.com/riturajjhaba938)*
+*Designed and Developed by [Rituraj Jha and Swaraj Prajapati]
